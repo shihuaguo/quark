@@ -20,7 +20,7 @@
 
     <modules>
         <module>openstore-eureka</module>
-        <module>openstore-config</module>
+        <module>openstore-config-server</module>
         <module>openstore-gateway</module>
         <module>openstore-demo</module>
         <module>service-feign</module>

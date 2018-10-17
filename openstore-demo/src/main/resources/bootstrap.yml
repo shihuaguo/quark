@@ -7,4 +7,9 @@ spring:
     config:
       label: master
       profile: dev
-      uri: http://localhost:8777
+      #uri: http://localhost:8777
+
+      fail-fast: true
+      discovery:
+        service-id: openstore-config-server
+        enabled: true
