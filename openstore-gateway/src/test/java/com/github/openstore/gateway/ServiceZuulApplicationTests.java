@@ -1,4 +1,4 @@
-package com.openstore.service.zuul;
+package com.github.openstore.gateway;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

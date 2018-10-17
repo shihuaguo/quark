@@ -3,18 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.openstore</groupId>
+    <groupId>com.github.openstore</groupId>
     <artifactId>openstore-gateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>${openstore.version}</version>
     <packaging>jar</packaging>
 
     <name>openstore-gateway</name>
-    <description>zuul service for open store projects</description>
+    <description>gateway service for open store projects</description>
 
     <parent>
-        <groupId>com.openstore</groupId>
-        <artifactId>openstore-parent</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.github</groupId>
+        <artifactId>openstore</artifactId>
+        <version>${openstore.version}</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 

@@ -1,4 +1,4 @@
-package com.openstore.eurekaserver;
+package com.github.openstore.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

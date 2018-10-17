@@ -1,4 +1,4 @@
-package com.openstore.service.zuul;
+package com.github.openstore.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,9 +10,9 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @EnableZuulProxy
 @EnableEurekaClient
 @EnableDiscoveryClient
-public class ServiceZuulApplication {
+public class OpenStoreGatewayApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ServiceZuulApplication.class, args);
+        SpringApplication.run(OpenStoreGatewayApplication.class, args);
     }
 }

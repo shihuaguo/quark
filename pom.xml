@@ -3,12 +3,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.openstore</groupId>
-    <artifactId>openstore-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.github</groupId>
+    <artifactId>openstore</artifactId>
+    <version>${openstore.version}</version>
     <packaging>pom</packaging>
 
-    <name>openstore-parent</name>
+    <name>openstore</name>
     <description>Parent of openstore projects</description>
 
     <parent>
@@ -29,6 +29,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <openstore.version>0.0.1-SNAPSHOT</openstore.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
     </properties>
 
