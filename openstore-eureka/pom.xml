@@ -4,16 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.openstore</groupId>
-    <artifactId>eureka-server</artifactId>
+    <artifactId>openstore-eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>openstore-eureka</name>
-    <description>eureka server of openstore</description>
+    <description>eureka server of open store</description>
 
     <parent>
         <groupId>com.openstore</groupId>
-        <artifactId>openstore</artifactId>
+        <artifactId>openstore-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
