@@ -1,4 +1,4 @@
-package com.openstore.eurekaclient;
+package com.github.openstore.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

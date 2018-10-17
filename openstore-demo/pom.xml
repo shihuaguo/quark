@@ -3,20 +3,24 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.openstore</groupId>
-    <artifactId>eureka-client</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.github.openstore</groupId>
+    <artifactId>openstore-demo</artifactId>
+    <version>${openstore.version}</version>
     <packaging>jar</packaging>
 
-    <name>eureka-client</name>
-    <description>Demo project for Spring Boot</description>
+    <name>openstore-demo</name>
+    <description>Demo project for open store project</description>
 
     <parent>
-        <groupId>com.openstore</groupId>
+        <groupId>com.github</groupId>
         <artifactId>openstore</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>${openstore.version}</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+    <properties>
+        <openstore.version>0.0.1-SNAPSHOT</openstore.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -30,20 +34,15 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
-
 
 </project>

@@ -1,4 +1,4 @@
-package com.openstore.eurekaclient;
+package com.github.openstore.demo;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -20,8 +20,12 @@ public class EurekaClientApplication {
     @Value("${server.port}")
     String port;
 
+    @Value("${demo.message}")
+    String message;
+
     @RequestMapping("/hi")
     public String home(@RequestParam(value = "name", defaultValue = "openstore") String name) {
-        return "hi " + name + " ,i am from port:" + port;
+        return "hi " + name + " ,i am from port:" + port + ",message=" + message;
     }
+
 }

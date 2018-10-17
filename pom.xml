@@ -20,9 +20,10 @@
 
     <modules>
         <module>openstore-eureka</module>
-        <module>eureka-client</module>
-        <module>service-feign</module>
+        <module>openstore-config</module>
         <module>openstore-gateway</module>
+        <module>openstore-demo</module>
+        <module>service-feign</module>
     </modules>
 
     <properties>
