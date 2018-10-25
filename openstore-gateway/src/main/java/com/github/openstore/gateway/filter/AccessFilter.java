@@ -9,6 +9,8 @@ import org.springframework.cloud.netflix.zuul.filters.support.FilterConstants;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 
+import javax.servlet.http.HttpServletRequest;
+
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.FORM_BODY_WRAPPER_FILTER_ORDER;
 
 /**
@@ -36,6 +38,8 @@ public class AccessFilter extends ZuulFilter {
     public Object run() throws ZuulException {
         RequestContext ctx = RequestContext.getCurrentContext();
         ctx.set("startTime", System.currentTimeMillis());
+        HttpServletRequest req = ctx.getRequest();
+        System.out.println(req.getParameterMap());
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         if (authentication != null) {
             RequestContext requestContext = RequestContext.getCurrentContext();

@@ -5,7 +5,7 @@
 
     <groupId>com.github</groupId>
     <artifactId>openstore</artifactId>
-    <version>${openstore.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>openstore</name>
@@ -25,6 +25,7 @@
         <module>openstore-demo</module>
         <module>service-feign</module>
         <module>openstore-common</module>
+        <module>openstore-service</module>
     </modules>
 
     <properties>
@@ -33,9 +34,13 @@
         <java.version>1.8</java.version>
         <openstore.version>0.0.1-SNAPSHOT</openstore.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-boot.version>2.0.5.RELEASE</spring-boot.version>
         <mybatis-plus.version>2.1.9</mybatis-plus.version>
         <mybatisplus-spring-boot-starter.version>1.0.5</mybatisplus-spring-boot-starter.version>
+        <kaptcha.version>0.0.9</kaptcha.version>
         <lombok.version>1.16.20</lombok.version>
+
+        <javadoc.version>1.0</javadoc.version>
     </properties>
 
     <!--公共依赖-->
@@ -88,10 +93,43 @@
     </dependencyManagement>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring-boot.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>build-info</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <target>${java.version}</target>
+                        <source>${java.version}</source>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>${javadoc.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
+            <!--skip.test-->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
             </plugin>
         </plugins>
     </build>

@@ -14,9 +14,13 @@
     <parent>
         <groupId>com.github</groupId>
         <artifactId>openstore</artifactId>
-        <version>${openstore.version}</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
+
+    <properties>
+        <start-class>com.github.openstore.eureka.EurekaServerApplication</start-class>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -24,5 +28,17 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <finalName>${project.name}</finalName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
