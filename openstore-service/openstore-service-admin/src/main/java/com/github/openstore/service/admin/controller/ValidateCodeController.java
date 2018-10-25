@@ -40,7 +40,7 @@ public class ValidateCodeController {
     public void createCode(@PathVariable String randomStr, HttpServletRequest request, HttpServletResponse response)
             throws Exception {
         log.info("随机码={}", randomStr);
-        Assert.isNull(randomStr, "机器码不能为空");
+        Assert.notNull(randomStr, "机器码不能为空");
         response.setHeader("Cache-Control", "no-store, no-cache");
         response.setContentType("image/jpeg");
         //生成文字验证码

@@ -17,7 +17,7 @@ import org.springframework.web.client.RestTemplate;
 @EnableFeignClients
 //@EnableGlobalMethodSecurity(prePostEnabled = true)
 @SpringCloudApplication
-@ComponentScan(basePackages = {"com.github.openstore.gateway", "com.github.openstore.common.bean"})
+@ComponentScan(basePackages = {"com.github.openstore.gateway", "com.github.openstore.common"})
 public class OpenStoreGatewayApplication {
 
     public static void main(String[] args) {

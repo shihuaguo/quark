@@ -2,6 +2,7 @@ package com.github.openstore.service.admin.service.impl;
 
 import com.github.openstore.common.constant.SecurityConstants;
 import com.github.openstore.service.admin.service.SysUserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class SysUserServiceImpl implements SysUserService {
 
+    @Autowired
     private RedisTemplate<String,Object> redisTemplate;
 
     @Override
