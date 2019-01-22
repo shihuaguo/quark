@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github</groupId>
-    <artifactId>openstore</artifactId>
+    <artifactId>quark</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>openstore</name>
-    <description>Parent of openstore projects</description>
+    <name>quark</name>
+    <description>Parent of quark projects</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -19,20 +19,19 @@
     </parent>
 
     <modules>
-        <module>openstore-eureka</module>
-        <module>openstore-config-server</module>
-        <module>openstore-gateway</module>
-        <module>openstore-demo</module>
-        <module>service-feign</module>
-        <module>openstore-common</module>
-        <module>openstore-service</module>
+        <module>quark-eureka</module>
+        <module>quark-config-server</module>
+        <module>quark-gateway</module>
+        <module>quark-demo</module>
+        <module>quark-common</module>
+        <module>quark-service</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <openstore.version>0.0.1-SNAPSHOT</openstore.version>
+        <quark.version>0.0.1-SNAPSHOT</quark.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
         <spring-boot.version>2.1.1.RELEASE</spring-boot.version>
         <mybatis-plus.version>2.1.9</mybatis-plus.version>
