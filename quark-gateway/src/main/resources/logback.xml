@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml" />
-    <logger name="org.springframework.web" level="INFO"/>
+    <logger name="org.springframework.cloud.gateway" level="INFO"/>
 
     <appender name="RollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>/logs/openstore-gateway.log</File>
+        <File>/logs/quark-gateway.log</File>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>/logs/openstore-gateway.%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>/logs/quark-gateway.%d{yyyy-MM-dd}.log</FileNamePattern>
             <maxHistory>3000</maxHistory>
         </rollingPolicy>
         <encoder>
@@ -16,10 +16,11 @@
 
     <!-- 开发、测试环境 -->
     <springProfile name="dev,test">
-        <logger name="org.springframework.web" level="INFO"/>
-        <logger name="org.springboot.sample" level="INFO" />
-        <logger name="com.github.openstore" level="DEBUG" />
-        <logger name="com.netflix.zuul" level="DEBUG" />
+        <logger name="org.springframework.cloud.gateway" level="trace"/>
+        <logger name="org.springframework.http.server.reactive" level="DEBUG" />
+        <logger name="org.springframework.web.reactive" level="DEBUG" />
+        <logger name="reactor.ipc.netty" level="DEBUG" />
+        <logger name="com.github.quark" level="DEBUG" />
         <root level="INFO">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="RollingFileAppender" />
@@ -28,9 +29,9 @@
 
     <!-- 生产环境 -->
     <springProfile name="pro">
-        <logger name="org.springframework.web" level="ERROR"/>
+        <logger name="org.springframework.cloud.gateway" level="ERROR"/>
         <logger name="org.springboot.sample" level="ERROR" />
-        <logger name="com.github.openstore" level="INFO" />
+        <logger name="com.github.quark" level="INFO" />
         <root level="INFO">
             <appender-ref ref="CONSOLE" />
             <appender-ref ref="RollingFileAppender" />

@@ -1,21 +1,21 @@
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-
-spring:
-  application:
-    name: openstore-gateway
-  profiles:
-    active: dev
-  cloud:
-    config:
-      label: master
-      profile: dev
-      #uri: http://localhost:8777
-      fail-fast: true
-      discovery:
-        service-id: openstore-config-server
-        enabled: true
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#spring:
+#  application:
+#    name: openstore-gateway
+#  profiles:
+#    active: dev
+#  cloud:
+#    config:
+#      label: master
+#      profile: dev
+#      #uri: http://localhost:8777
+#      fail-fast: true
+#      discovery:
+#        service-id: openstore-config-server
+#        enabled: true

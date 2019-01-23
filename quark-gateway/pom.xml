@@ -25,34 +25,59 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-        </dependency>
+        </dependency>-->
         <!--zuul网关-->
        <!-- <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zuul</artifactId>
         </dependency>-->
         <!--zuul限流-->
-        <dependency>
+        <!--<dependency>
             <groupId>com.marcosbarbero.cloud</groupId>
             <artifactId>spring-cloud-zuul-ratelimit</artifactId>
             <version>1.5.0.RELEASE</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
         </dependency>
 
         <!--oauth2.0-->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.security.oauth.boot</groupId>
+                    <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.security.oauth.boot</groupId>
+            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+            <version>2.1.0.RELEASE</version>
+        </dependency>-->
+
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.11</version>
         </dependency>
+
 
         <dependency>
             <groupId>com.github</groupId>
