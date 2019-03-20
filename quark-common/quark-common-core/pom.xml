@@ -3,19 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>quark</artifactId>
+        <artifactId>quark-common</artifactId>
         <groupId>com.github</groupId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <packaging>pom</packaging>
 
-    <name>quark-common</name>
-    <description>common project for quark project</description>
-    <modules>
-        <module>quark-common-core</module>
-    </modules>
-    <artifactId>quark-common</artifactId>
+    <artifactId>quark-common-core</artifactId>
+
 
 </project>
