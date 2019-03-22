@@ -12,5 +12,16 @@
 
     <artifactId>quark-common-core</artifactId>
 
+    <properties>
+        <dozer.version>6.2.0</dozer.version>
+    </properties>
 
+    <dependencies>
+        <!--对象转换-->
+        <dependency>
+            <groupId>com.github.dozermapper</groupId>
+            <artifactId>dozer-core</artifactId>
+            <version>${dozer.version}</version>
+        </dependency>
+    </dependencies>
 </project>
