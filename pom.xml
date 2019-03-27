@@ -14,6 +14,8 @@
     <properties>
         <quark.version>0.0.1-SNAPSHOT</quark.version>
         <quark-common.version>0.0.1-SNAPSHOT</quark-common.version>
+        <quark-common-core.version>0.0.1-SNAPSHOT</quark-common-core.version>
+        <quark-common-security.version>0.0.1-SNAPSHOT</quark-common-security.version>
         <quark-eureke.version>0.0.1-SNAPSHOT</quark-eureke.version>
         <quark-gateway.version>0.0.1-SNAPSHOT</quark-gateway.version>
 
@@ -106,7 +108,12 @@
             <dependency>
                 <groupId>com.github</groupId>
                 <artifactId>quark-common-core</artifactId>
-                <version>${quark-common.version}</version>
+                <version>${quark-common-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github</groupId>
+                <artifactId>quark-common-security</artifactId>
+                <version>${quark-common-security.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

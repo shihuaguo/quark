@@ -12,10 +12,15 @@
     <packaging>pom</packaging>
 
     <name>quark-common</name>
+    <!--<version>${quark-common.version}</version>-->
     <description>common project for quark project</description>
+    <artifactId>quark-common</artifactId>
     <modules>
         <module>quark-common-core</module>
+        <module>quark-common-security</module>
     </modules>
-    <artifactId>quark-common</artifactId>
+
+    <properties>
+    </properties>
 
 </project>

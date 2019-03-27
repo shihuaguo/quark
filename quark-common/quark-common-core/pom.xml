@@ -6,9 +6,10 @@
         <artifactId>quark-common</artifactId>
         <groupId>com.github</groupId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>${quark-common.version}</version>
+    <version>${quark-common-core.version}</version>
 
     <artifactId>quark-common-core</artifactId>
 
@@ -31,6 +32,10 @@
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
         </dependency>
     </dependencies>
 </project>

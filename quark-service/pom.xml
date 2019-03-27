@@ -28,8 +28,7 @@
 
         <dependency>
             <groupId>com.github</groupId>
-            <artifactId>quark-common</artifactId>
-            <version>${quark.version}</version>
+            <artifactId>quark-common-core</artifactId>
         </dependency>
     </dependencies>
 
