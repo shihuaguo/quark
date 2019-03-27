@@ -15,6 +15,7 @@
         <quark.version>0.0.1-SNAPSHOT</quark.version>
         <quark-common.version>0.0.1-SNAPSHOT</quark-common.version>
         <quark-eureke.version>0.0.1-SNAPSHOT</quark-eureke.version>
+        <quark-gateway.version>0.0.1-SNAPSHOT</quark-gateway.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -79,12 +80,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
-        <!--<dependency>
-            <groupId>com.ctrip.framework.apollo</groupId>
-            <artifactId>apollo-client</artifactId>
-            <version>${apollo.version}</version>
-        </dependency>-->
     </dependencies>
 
     <dependencyManagement>
@@ -110,7 +105,7 @@
 
             <dependency>
                 <groupId>com.github</groupId>
-                <artifactId>quark-common</artifactId>
+                <artifactId>quark-common-core</artifactId>
                 <version>${quark-common.version}</version>
             </dependency>
         </dependencies>

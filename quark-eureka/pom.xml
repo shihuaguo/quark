@@ -5,7 +5,7 @@
 
     <groupId>com.github.quark</groupId>
     <artifactId>quark-eureka</artifactId>
-    <version>${quark-eureke.version.version}</version>
+    <version>${quark-eureke.version}</version>
     <packaging>jar</packaging>
 
     <name>quark-eureka</name>
