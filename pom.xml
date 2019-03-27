@@ -34,7 +34,6 @@
 
     <modules>
         <module>quark-eureka</module>
-        <module>quark-config-server</module>
         <module>quark-gateway</module>
         <module>quark-common</module>
         <module>quark-service</module>
