@@ -5,7 +5,7 @@
 
     <groupId>com.github.quark</groupId>
     <artifactId>quark-gateway</artifactId>
-    <version>${quark-gateway.version.version}</version>
+    <version>${quark-gateway.version}</version>
     <packaging>jar</packaging>
 
     <name>quark-gateway</name>
