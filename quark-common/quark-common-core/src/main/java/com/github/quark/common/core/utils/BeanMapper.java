@@ -39,4 +39,12 @@ public class BeanMapper {
         }
         return dozerBeanMapper.map(from, toClass);
     }
+
+    public static <FROM, TO> TO convert(FROM from, TO to) {
+        if (from == null || to == null) {
+            return null;
+        }
+        dozerBeanMapper.map(from, to);
+        return to;
+    }
 }

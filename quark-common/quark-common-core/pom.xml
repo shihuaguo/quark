@@ -23,5 +23,14 @@
             <artifactId>dozer-core</artifactId>
             <version>${dozer.version}</version>
         </dependency>
+        <!-- 时间处理 -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
     </dependencies>
 </project>

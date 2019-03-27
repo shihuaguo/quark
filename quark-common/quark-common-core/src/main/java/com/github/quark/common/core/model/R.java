@@ -22,20 +22,20 @@ public class R<T> implements Serializable {
     private String msg = "";
     private T data;
 
-    public static R fail() {
-        return new R(ERR, ERR_MSG);
+    public static <T> R<T> fail() {
+        return new R<>(ERR, ERR_MSG);
     }
 
-    public static R fail(String message) {
-        return new R(ERR, message);
+    public static <T> R<T> fail(String message) {
+        return new R<>(ERR, message);
     }
 
-    public static R fail(String code, String message) {
-        return new R(code, message);
+    public static <T> R<T> fail(String code, String message) {
+        return new R<>(code, message);
     }
 
-    public static R success(String message) {
-        return new R(OK, message);
+    public static <T> R<T> success(String message) {
+        return new R<>(OK, message);
     }
 
     public static <T> R<T> success(T data) {
