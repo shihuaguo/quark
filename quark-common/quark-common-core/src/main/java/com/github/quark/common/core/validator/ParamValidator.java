@@ -1,7 +1,7 @@
 package com.github.quark.common.core.validator;
 
-import com.github.quark.common.core.enums.BizCode;
 import com.github.quark.common.core.exception.BusinessException;
+import com.github.quark.common.core.model.ICode;
 import com.github.quark.common.core.model.R;
 import lombok.extern.slf4j.Slf4j;
 
@@ -28,7 +28,7 @@ public class ParamValidator {
             for (ConstraintViolation<T> constraintViolation : constraintViolations) {
                 errors.append(constraintViolation.getMessage()).append(++i == size ? "" : "&");
             }
-            throw new BusinessException(BizCode.REQUEST_PARAM_ILLEGAL.getCode(), errors.toString());
+            throw new BusinessException(ICode.REQUEST_PARAM_ILLEGAL.getCode(), errors.toString());
         }
         return R.success(t);
     }

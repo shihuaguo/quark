@@ -9,13 +9,13 @@ public class R<T> implements Serializable {
 
     private static final long serialVersionUID = 1L;
     // 处理成功
-    public static final String OK = "0000";
+    public static final String OK = ICode.SUCCESS.getCode();
     // 成功描述
-    public static final String OK_MSG = "操作成功";
+    public static final String OK_MSG = ICode.SUCCESS.getMsg();
     // 其他错误
-    public static final String ERR = "9999";
+    public static final String ERR = ICode.UNKNOWN_EXCEPTION.getCode();
     // 其他错误
-    public static final String ERR_MSG = "操作失败";
+    public static final String ERR_MSG = ICode.UNKNOWN_EXCEPTION.getMsg();
 
     public static final R SUCCESS = new R(OK, OK_MSG);
     private String code = ERR;
