@@ -30,6 +30,6 @@ public class ParamValidator {
             }
             throw new BusinessException(ICode.REQUEST_PARAM_ILLEGAL.getCode(), errors.toString());
         }
-        return R.success(t);
+        return R.successWith(t);
     }
 }

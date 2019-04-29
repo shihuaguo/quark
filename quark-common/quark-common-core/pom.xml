@@ -9,8 +9,6 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>${quark-common-core.version}</version>
-
     <artifactId>quark-common-core</artifactId>
 
     <properties>

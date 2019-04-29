@@ -38,7 +38,7 @@ public class R<T> implements Serializable {
         return new R<>(OK, message);
     }
 
-    public static <T> R<T> success(T data) {
+    public static <T> R<T> successWith(T data) {
         return new R<>(OK, OK_MSG, data);
     }
 
