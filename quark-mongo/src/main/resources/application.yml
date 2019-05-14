@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: quark-mongo
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      #host: 47.107.65.113
+      #port: 27017
+      #database: blog
+      #username: mao
+      #password: 20190514
+      authentication-database: blog
+      uri: mongodb://maochunhua:20190514@47.107.65.113:27017/blog
+server:
+  port: 8081

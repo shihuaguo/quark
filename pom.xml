@@ -35,6 +35,7 @@
         <module>quark-gateway</module>
         <module>quark-common</module>
         <module>quark-service</module>
+        <module>quark-mongo</module>
     </modules>
 
     <!--公共依赖-->
