@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: quark-eureka-server
+        order: 0
+        predicates:
+        - Path=/eureka/**
+        uri: lb://quark-eureka-server
+        filters:
+        - Log

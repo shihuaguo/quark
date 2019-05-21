@@ -1,6 +1,6 @@
 #!/bin/bash
-SERVICE_NAME=ioun-eureka-server
-export APP_NAME=ioun-eureka-server
+SERVICE_NAME=quark-eureka-server
+export APP_NAME=quark-eureka-server
 #export JAVA_HOME=/usr/local/jdk8
 
 if [[ -z "$JAVA_HOME" && -d /usr/java/latest/ ]]; then

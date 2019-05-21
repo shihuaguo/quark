@@ -9,8 +9,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date 2019-05-14
  **/
 @SpringBootApplication
-public class MongoApp {
+public class MongoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MongoApp.class, args);
+        SpringApplication.run(MongoApplication.class, args);
     }
 }
