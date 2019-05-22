@@ -2,11 +2,11 @@ spring:
   application:
     name: quark-mongo
   profiles:
-    active: dev
+    active: pro
   data:
     mongodb:
       authentication-database: blog
-      uri: mongodb://maochunhua:20190514@47.107.65.113:27017/blog
+      uri: mongodb://maochunhua:20190514@localhost:27017/blog
 server:
   port: 8081
 
