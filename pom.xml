@@ -11,6 +11,12 @@
     <name>quark</name>
     <description>Parent of quark projects</description>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.2.RELEASE</version>
+    </parent>
+
     <properties>
         <!--<quark.version>0.0.1-SNAPSHOT</quark.version>-->
 
@@ -62,14 +68,13 @@
     <dependencyManagement>
         <dependencies>
             <!--spring boot 相关管理包-->
-            <dependency>
-                <!-- Import dependency management from Spring Boot -->
+            <!--<dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
+            </dependency>-->
 
             <!--spring cloud 相关包版本管理-->
             <dependency>
