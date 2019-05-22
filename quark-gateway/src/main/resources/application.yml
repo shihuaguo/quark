@@ -2,10 +2,11 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: quark-eureka-server
+      - id: quark-mongo-server
         order: 0
         predicates:
-        - Path=/eureka/**
-        uri: lb://quark-eureka-server
+        - Path=/mongo/**
+        uri: lb://quark-mongo
         filters:
         - Log
+        - StripPrefix=1
