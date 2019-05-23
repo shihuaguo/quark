@@ -34,6 +34,10 @@ public class R<T> implements Serializable {
         return new R<>(code, message);
     }
 
+    public static <T> R<T> success() {
+        return new R<>(OK, OK_MSG);
+    }
+
     public static <T> R<T> success(String message) {
         return new R<>(OK, message);
     }
