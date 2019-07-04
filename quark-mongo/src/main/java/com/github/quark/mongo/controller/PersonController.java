@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author shihuaguo
  * @email huaguoshi@gmail.com
@@ -50,5 +53,13 @@ public class PersonController {
         return flux.count().flatMap(c -> c > 0 ?
                 Mono.just(R.fail(ICode.REQUEST_PARAM_ILLEGAL.getCode(), "username already exists!")) :
                 userService.save(person).map(p -> R.success()));
+    }
+
+    @GetMapping("/callback")
+    public Mono<Map<String, String>> success(){
+        Map<String, String> map = new HashMap<>();
+        map.put("success", "true");
+        map.put("message", "callback success");
+        return Mono.just(map);
     }
 }
