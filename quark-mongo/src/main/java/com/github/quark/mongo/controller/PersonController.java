@@ -55,7 +55,7 @@ public class PersonController {
                 userService.save(person).map(p -> R.success()));
     }
 
-    @GetMapping("/callback")
+    @RequestMapping("/callback")
     public Mono<Map<String, String>> success(){
         Map<String, String> map = new HashMap<>();
         map.put("success", "true");
