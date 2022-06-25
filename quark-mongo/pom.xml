@@ -12,7 +12,7 @@
     <artifactId>quark-mongo</artifactId>
 
     <properties>
-        <spring-data-mongodb.version>2.1.8.RELEASE</spring-data-mongodb.version>
+        <spring-data-mongodb.version>3.3.5</spring-data-mongodb.version>
     </properties>
 
     <dependencies>
